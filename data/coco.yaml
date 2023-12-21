@@ -1,0 +1,10 @@
+train: mydatasets/images/train/  # train images (relative to 'path') 128 images
+val: mydatasets/images/val/
+test: mydatasets/images/test/
+   #改为自己的测试文件的路径
+
+# number of classes
+nc: 3
+
+# class names
+names: ['Prohibitory', 'Warning', 'Mandatory']
