@@ -34,7 +34,6 @@ from utils.loss import ComputeLoss, ComputeLossOTA
 from utils.plots import plot_images, plot_results, plot_evolution
 from utils.torch_utils import ModelEMA, select_device, intersect_dicts, torch_distributed_zero_first, is_parallel
 from utils.wandb_logging.wandb_utils import WandbLogger, check_wandb_resume
-from models.IEM import IEM  # 假设 IEM 类在 common.py 文件中
 logger = logging.getLogger(__name__)
 
 
@@ -42,8 +41,8 @@ def train(hyp, opt, device, tb_writer=None):
     logger.info(colorstr('hyperparameters: ') + ', '.join(f'{k}={v}' for k, v in hyp.items()))
     save_dir, epochs, batch_size, total_batch_size, weights, rank, freeze = \
         Path(opt.save_dir), opt.epochs, opt.batch_size, opt.total_batch_size, opt.weights, opt.global_rank, opt.freeze
-    # 初始化 IEM 实例
-    iem = IEM(in_channels=3)  # 假设输入图像是 RGB
+    # 
+    iem = IEM(in_channels=3)  # 
 
     # Directories
     wdir = save_dir / 'weights'
