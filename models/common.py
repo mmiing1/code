@@ -2211,11 +2211,6 @@ class DetailEnhancementModule(nn.Module):
         combined = conv_out + prewitt_x_out + prewitt_y_out
         return self.conv1x1(combined)
 
-
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-
 class ACResBlock(nn.Module):
     class Conv(nn.Module):
         def __init__(self, c1, c2, k=1, s=1, p=None, g=1, act=True):
