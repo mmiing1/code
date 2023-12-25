@@ -1,3 +1,6 @@
+# The parts added in the official code are the parts improved in the thesis, but since everyone's environment parameters are different, please forgive me if it causes it to not work. This code is for reference only.
+
+
 # Official YOLOv7
 
 Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/abs/2207.02696)
