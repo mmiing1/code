@@ -1,4 +1,4 @@
-# The parts added in the official code are the parts improved in the thesis, but since everyone's environment parameters are different, please forgive me if it causes it to not work. This code is for reference only.
+# The extra parts added to the official YOLOv7 code are the improved parts of the author's manuscript, but due to the fact that everyone's environment parameters are not configured in the same way, we are very sorry if part of the code does not work. This code is for readers' reference only.
 
 
 # Official YOLOv7
